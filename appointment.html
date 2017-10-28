@@ -7,9 +7,22 @@
 <body>
 
 <form action = "RegisterAppointment.php" method="POST">
-	Name:<input type="text" name="sname"><br>
-	Student ID: <input type="text" name="sID"><br>
-	Reason for appointment: <input type="text" name="reason"><br>
+	Name:<input type="text" name="sname" id = "sname" required=""><br>
+	Student ID: <input type="text" name="sID" id = "sID" required=""><br>
+	Reason for appointment: <select name = "reason"><br>
+			<br><option value = "1"> Academic Advisement</option><br>
+			<br><option value = "2"> Carrer Counseling</option><br>
+			<br><option value = "3"> Financial Aid</option><br>
+			<br><option value = "5"> General Questions</option><br>
+			<br><option value = "9"> Resume</option><br>
+			<br><option value = "10"> Intership Search</option><br>
+		</select><br>
+		Counselor: <select name = "counselor"><br>
+			<br><option value = "112233"> Rosales</option><br>
+		</select><br>
+		Location: <select name = "location"><br>
+			<br><option value = "L145"> Carrer Center Offices</option><br>
+		</select><br>
 	<input type="submit" name="submitbutton">
 </form>
 
